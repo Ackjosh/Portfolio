@@ -30,8 +30,8 @@ export default function About() {
   return (
     <div className="max-w-7xl px-0 py-16 gap-20 flex flex-col abt">
       <h1 className='info'>About Me</h1>
-      <div className="fsec flex flex-col gap-10">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-30 items-start">
+      <div className="fsec flex flex-col gap-15">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-60 items-start">
         {/* LEFT COLUMN - profile + stats + CTAs */}
         <aside className="md:col-span-2 flex flex-col items-center md:items-start gap-1">
           <h3 className="text-white text-2xl font-semibold mt-4">Akshat Joshi</h3>
@@ -87,9 +87,9 @@ export default function About() {
         </aside>
 
         {/* MAIN (center/right) - About text + LogoLoop */}
-        <main className="md:col-span-3 relative top-3 left-5 gap-10 flex flex-col">
+        <main className="md:col-span-3 relative top-5 left-5 gap-10 flex flex-col">
           <div className="bg-zinc-800/50 rounded-2xl p-7 gap-10 flex flex-col">
-            <p className="text-gray-400 leading-relaxed text-lg font-[Playfair Display]">
+            <p className="text-gray-400 leading-relaxed text-lg">
               Hi, I'm Akshat! I'm a <strong className="text-white">Web Developer</strong> passionate about building intuitive and high-performance digital experiences with a solid foundation in <strong className="text-white">Data Structures and Algorithms</strong> with over 300 problems solved. I love learning new technologies and continuously improving my skills to deliver the best solutions. I have worked with technologies including <strong className="text-white">React, Node, MongoDB, TypeScript, MySQL</strong> and am exploring <strong className="text-white">LangChain</strong>. I also have a 2 star rating on CodeChef (max 1516). I'm excited about applications of <strong className="text-white">GenAI</strong> in industry grade projects. 
             </p>
             
@@ -99,7 +99,6 @@ export default function About() {
               <li>- Worked with React, Node.js, Express, and MongoDB for full stack web apps.</li>
               <li>- Developed APIs and user authentication using TypeScript and JWT</li>
               <li>- Managed data and schemas with SQL (MySQL) and NoSQL databases.</li>
-              <li>- Solved 300+ LeetCode problems, strengthening algorithms and data structures expertise.</li>
             </ul>
             </div>
           </div>
