@@ -24,7 +24,7 @@ const projectsData = [
     description: "Interactive portfolio to showcase projects, expertise, and connect with me.",
     image: "/Screenshot (33).png",
     techStack: ["TypeScript", "React", "Lenis", "GSAP", "Tailwind"],
-    github: "https://github.com/Ackjosh/project3",
+    github: "https://github.com/Ackjosh/Portfolio",
   },
   {
     title: "Spotify Clone",
