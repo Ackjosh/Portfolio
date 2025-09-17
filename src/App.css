@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+@import url('https://fonts.cdnfonts.com/css/bradley-hand-2');
+@import "tailwindcss";
+html,body, #root{
+  height: 100%;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body{
+  /* background-image: url(minimalism_texture_black_55242_1600x900.jpg); */
+  /* background-image: url(fde2a37249a51ab1d77f752a5c3da0cd.jpg); */
+  /* background-image: url("/670454.jpg"); */
+  z-index: 100;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hder {
+  height: 6vh;
+  opacity: 100%;
+  position: fixed;
+  z-index: 10;
+  color: white;
+  font-family: "Alegreya Sans SC";
+  overflow: auto;
+}
+
+.template{
+  overflow: auto;
+}
+
+.main-screen {
+  height: auto;
+  z-index: 1;
+  overflow: visible;
+}
+
+.fullscreen-menu .staggered-menu-panel {
+  min-height: 100vh;
+}
+
+.fullscreen-menu .staggered-menu-wrapper {
+  height: 100%;
+}
+
+.fullscreen-menu,
+.fullscreen-menu .staggered-menu-wrapper,
+.fullscreen-menu .staggered-menu-panel,
+.fullscreen-menu .sm-prelayers {
+  position: fixed;
+  top: -5px;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 40;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.fullscreen-menu.open,
+.fullscreen-menu.open .staggered-menu-wrapper,
+.fullscreen-menu.open .staggered-menu-panel,
+.fullscreen-menu.open .sm-prelayers {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.fullscreen-menu {
+  position: fixed !important;
+}
+
+.fullscreen-menu img[src*="image.png"] {
+  width: 75px;
+  height: auto;
+}
+
+.fullscreen-menu {
+  position: fixed !important;
+  top: 0rem;
+  right: -1rem;
+  z-index: 50;
+  pointer-events: none; /* disable catching clicks */
+}
+
+/* Only allow menu button to be clickable */
+.fullscreen-menu .staggered-menu-button {
+  pointer-events: auto; /* clickable */
+  position: relative;
+  z-index: 100;
+}
+
+/* When menu is open – allow interaction with panel */
+.fullscreen-menu.open {
+  pointer-events: auto; /* enable clicks */
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+
+.fter {
+  height: 5vh;
+  background-color: rgb(44, 44, 44);
+  z-index: 1;
+  color: white;
+}
+
+.btnn {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 1px !important;
+  color: rgb(249, 243, 243) !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+}
+
+.btnn::after {
+  content: "" !important;
+  display: block !important;
+  height: 2px !important;
+  width: 100% !important;
+  background-color: rgb(240, 240, 240) !important;
+  transform: scale(0) !important;
+  transform-origin: left !important;
+  transition: transform 0.3s ease-in !important;
+}
+
+.btnn:hover::after {
+  transform: scale(1) !important;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section {
+  margin: 10px 0px;
+  position: relative;
+}
+
+.greet {
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: -30px;
+  margin: 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.name h3{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 5px;
+  position: relative;
+  left: -35px;
+}
+
+.fullname{
+  color: rgb(230, 220, 190);
+}
+
+.desc{
+  font-size: 30px;
+  color: rgb(255,255,255);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.first-section h1 {
+  font-size: 4rem;
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  left: -35px;
+}
+
+#typed-text{
+  color: rgb(43, 197, 138);
+}
+
+.name{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.beams-container {
+  pointer-events: none; /* allows clicks to pass through */
+}
+
+.typed {
+  padding: 0px 0px;
+  position: relative;
+  left: 10px;
+  color: white;
+  margin: 30px 0px;
+  font-size: 3.4rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.typed .span {
+  padding: 10px 25px;
+  font-size: 3.4rem;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.buttons {
+  margin: 0px 40px;
+  position: relative;
+  left: +45px;
+  font-family: "Alegreya Sans SC";
+}
+
+/* .span{
+  color: greenyellow;
+} */
+
+.btnn {
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.image {
+  padding: 20px 0px;
+}
+
+.neon-img {
+  margin: 0px -60px;
+  border-radius: 0px;  
+}
+
+/* .neon-img:hover {
+  box-shadow:
+    0 0 15px rgb(186, 11, 239),
+    0 0 30px rgb(186, 11, 239),
+    0 0 60px rgb(186, 11, 239),
+    0 0 12px rgb(186, 11, 239);
+  transition: 0.3s ease-in-out;
+} */
+
+.glow-soft {
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* .glow-soft:hover {
+  box-shadow: 0 0 40px rgb(3, 254, 233);
+} */
+
+
+.glow-cyberpunk {
+  border-radius: 50%;
+  border: 4px solid transparent;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.5), 0 0 80px rgba(255, 0, 182, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-cyberpunk:hover {
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.8), 0 0 100px rgba(255, 0, 182, 0.6);
+}
+
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 30px rgba(0, 153, 255, 0.5); }
+  50% { box-shadow: 0 0 60px rgba(0, 153, 255, 0.8); }
+  100% { box-shadow: 0 0 30px rgba(0, 153, 255, 0.5); }
+}
+
+.glow-pulse {
+  border-radius: 50%;
+  border: 4px solid transparent;
+  box-shadow: 0 0 30px rgba(0, 153, 255, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.glow-pulse:hover {
+  animation: pulse 2s infinite;
+}
+
+
+.herodesc {
+  padding: 0px 85px;
+}

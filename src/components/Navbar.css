@@ -1,0 +1,8 @@
+.staggered-menu-header {
+  top: 2rem; /* moves button down a bit */
+}
+
+.staggered-menu-panel {
+  max-height: 90vh; /* ensures it doesn’t overflow screen */
+  overflow-y: auto;  /* allows scrolling if too tall */
+}
