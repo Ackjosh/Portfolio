@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 23px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #1da1f2; /* twitter blue-ish on hover */
+}

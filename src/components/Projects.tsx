@@ -3,6 +3,7 @@ import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiMongodb, SiPython,
 import { FaGithub } from 'react-icons/fa'
 import { FiMove } from 'react-icons/fi'
 import { MdAnimation } from 'react-icons/md';
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 const projectsData = [
   {
@@ -57,14 +58,19 @@ const techIcons: Record<string, React.ReactNode> = {
 const Projects = () => {
   return (
     <div className="w-full relative flex flex-col gap-6 pjt px-8">
+      <FadeInWhenVisible>
       <h1 className="info text-center text-white">Projects</h1>
+      </FadeInWhenVisible>
+      <FadeInWhenVisible>
       <p className="text-gray-300 text-lg text-center max-w-3xl mx-auto">
         Here you'll find a selection of my recent work, ranging from web development to GenAI experiments.
       </p>
+      </FadeInWhenVisible>
 
       {/* Grid layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 mx-auto">
         {projectsData.map((proj, idx) => (
+          <FadeInWhenVisible>
           <div
             key={idx}
             className="bg-black rounded-xl h-[28rem] w-[25rem] flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
@@ -104,6 +110,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          </FadeInWhenVisible>
         ))}
       </div>
     </div>
