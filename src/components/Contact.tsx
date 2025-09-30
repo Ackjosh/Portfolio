@@ -1,13 +1,26 @@
-import { Mail, Github, Linkedin } from "lucide-react";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Mail } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 import FadeInWhenVisible from "./FadeInWhenVisible";
+import { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const subject = encodeURIComponent(`Message from ${name}`);
+    const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
+
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=akshatdjoshi@gmail.com&su=${subject}&body=${body}`;
+    window.open(gmailLink, "_blank"); // open Gmail in a new tab
+  };
+
   return (
-    <FadeInWhenVisible>
+    <FadeInWhenVisible>  
     <div className="w-full max-w-6xl px-6 md:px-12 py-20 flex flex-col md:flex-row items-center gap-20">
-      {/* Left Side */}
-      
       <div className="flex-1 text-center md:text-left">
         <h2 className="text-4xl font-bold text-white mb-4">Let's Connect</h2>
         <p className="text-gray-300 text-lg mb-6">
@@ -35,24 +48,33 @@ const Contact = () => {
         </div>
       </div>
 
-
-      {/* Right Side: Contact Form */}
-      
       <div className="flex-1 w-full">
-        <form className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-8 flex flex-col gap-6">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-8 flex flex-col gap-6"
+        >
           <input
             type="text"
             placeholder="Your Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
             className="w-full p-3 rounded-xl bg-white/5 border border-gray-600 text-white placeholder-gray-400 focus:border-[rgb(43,197,138)] outline-none"
           />
           <input
             type="email"
             placeholder="Your Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
             className="w-full p-3 rounded-xl bg-white/5 border border-gray-600 text-white placeholder-gray-400 focus:border-[rgb(43,197,138)] outline-none"
           />
           <textarea
             placeholder="Your Message"
             rows={4}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
             className="w-full p-3 rounded-xl bg-white/5 border border-gray-600 text-white placeholder-gray-400 focus:border-[rgb(43,197,138)] outline-none"
           ></textarea>
           <button
@@ -69,3 +91,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

@@ -7,7 +7,7 @@ import FadeInWhenVisible from './FadeInWhenVisible';
 
 const projectsData = [
   {
-    title: "RFAS",
+    title: "Real-time Fuel Availability System",
     description: "Architected a real-time fuel tracking system (app and website) with live station data and maps using Firebase, Firestore, and OpenStreetMap APIs.",
     image: "/Screenshot (34).png",
     techStack: ["React", "Node.js", "Tailwind", "TypeScript", "Firebase", "Dart"],

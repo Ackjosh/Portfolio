@@ -5,10 +5,12 @@ import {
   SiReact, SiTypescript, SiTailwindcss, SiMysql, SiNodedotjs,
   SiExpress, SiMongodb, SiLeetcode, SiLangchain, SiCss3,
   SiJavascript, SiPython, SiHtml5,
-  SiCodechef
+  SiCodechef,
+  SiFifa,
+  SiGithub
 } from 'react-icons/si';
 import Education from './Education';
-import FadeInWhenVisible from './FadeInWhenVisible'; // 👈 import
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 const techLogos = [
   { node: <SiReact className="text-white" />, title: "React" },
@@ -25,6 +27,7 @@ const techLogos = [
   { node: <SiTypescript className="text-white" />, title: "TypeScript" },
   { node: <SiPython className="text-white" />, title: "Python" },
   { node: <SiHtml5 className="text-white" />, title: "HTML5" },
+  { node: <SiGithub className="text-white" />, title: "Github" },
 ];
 
 export default function About() {
@@ -66,7 +69,7 @@ export default function About() {
                   Resume
                 </a>
                 <a
-                  href="mailto:your-email@domain.com"
+                  href="#contact"
                   className="px-4 py-2 rounded-md border border-white/10 text-white hover:bg-white/5"
                 >
                   Contact
@@ -86,15 +89,15 @@ export default function About() {
               </div>
 
               <div className="mt-7 flex gap-5">
-                <a className="text-white font-[Inter] socials hover:text-[rgb(43,197,138)]" href="https://github.com/Ackjosh" target="_blank" rel="noreferrer">GitHub</a>
-                <a className="text-white font-[Inter] socials hover:text-[rgb(43,197,138)]" href="https://linkedin.com/in/akshat-joshi-17ab542b9/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a className="text-white font-[Inter] socials hover:text-[rgb(43,197,138)] text-2xl font-semibold mt-2" href="https://github.com/Ackjosh" target="_blank" rel="noreferrer">GitHub</a>
+                <a className="text-white font-[Inter] socials hover:text-[rgb(43,197,138)] text-2xl font-semibold mt-2" href="https://linkedin.com/in/akshat-joshi-17ab542b9/" target="_blank" rel="noreferrer">LinkedIn</a>
               </div>
             </aside>
 
-              <main className="md:col-span-3 relative top-5 left-5 gap-10 flex flex-col">
+              <main className="md:col-span-3 relative top-2 left-5 gap-10 flex flex-col">
                 <div className="bg-zinc-800/50 rounded-2xl p-7 gap-10 flex flex-col">
                   <p className="text-gray-400 leading-relaxed text-lg">
-                    Hi, I'm Akshat! I'm a <strong className="text-white">Web Developer</strong> passionate about building intuitive and high-performance digital experiences with a solid foundation in <strong className="text-white">Data Structures and Algorithms</strong> with over 300 problems solved. I love learning new technologies and continuously improving my skills to deliver the best solutions. I have worked with technologies including <strong className="text-white">React, Node, MongoDB, TypeScript, MySQL</strong> and am exploring <strong className="text-white">LangChain</strong>. I also have a 2 star rating on CodeChef (max 1516). I'm excited about applications of <strong className="text-white">GenAI</strong> in industry grade projects.
+                    Hi, I'm Akshat! I'm a <strong className="text-white">Web Developer</strong> passionate about building intuitive and high-performance digital experiences with a solid foundation in <strong className="text-white">Data Structures and Algorithms</strong> with over 300 problems solved. I have worked with various technologies including <strong className="text-white">React, Node.js, MongoDB, TypeScript, MySQL</strong>. Enthusiasitc about implications of <strong className="text-white">GenAI</strong> in industry grade projects and have hands-on experience with <strong className='text-white'>RAG</strong> pipelines and Vector databases. I love learning new technologies and continuously improving my skills to deliver the best solutions. I also have a 2 star rating on CodeChef (max 1538). 
                   </p>
 
                   <div className="flex flex-col gap-2">
