@@ -1,5 +1,3 @@
-import React from "react";
-
 type EducationItem = {
   image: string;
   institution: string;

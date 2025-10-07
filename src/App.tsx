@@ -13,7 +13,7 @@ import Beams from './components/ui/Beams';
 import StaggeredMenu from './components/ui/StaggeredMenu';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage] = useState('home');
   const containerRef = useRef(null);
 
   useEffect(() => {
