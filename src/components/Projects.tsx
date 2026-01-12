@@ -1,5 +1,5 @@
 import './Projects.css'
-import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiMongodb, SiPython, SiJavascript, SiFirebase, SiDart, SiPostman, SiCss3, SiFastapi, SiGooglegemini, SiThemoviedatabase } from 'react-icons/si'
+import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiMongodb, SiPython, SiJavascript, SiFirebase, SiDart, SiCss3, SiFastapi, SiGooglegemini, SiThemoviedatabase } from 'react-icons/si'
 import { FaGithub } from 'react-icons/fa'
 import { FiMove, FiLayers } from 'react-icons/fi'
 import { MdAnimation, MdOutlineStorage } from 'react-icons/md';
