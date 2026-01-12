@@ -1,11 +1,18 @@
 import './Projects.css'
-import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiMongodb, SiPython, SiJavascript, SiFirebase, SiDart, SiPostman, SiCss3 } from 'react-icons/si'
+import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiMongodb, SiPython, SiJavascript, SiFirebase, SiDart, SiPostman, SiCss3, SiFastapi, SiGooglegemini, SiThemoviedatabase } from 'react-icons/si'
 import { FaGithub } from 'react-icons/fa'
-import { FiMove } from 'react-icons/fi'
-import { MdAnimation } from 'react-icons/md';
+import { FiMove, FiLayers } from 'react-icons/fi'
+import { MdAnimation, MdOutlineStorage } from 'react-icons/md';
 import FadeInWhenVisible from './FadeInWhenVisible';
 
 const projectsData = [
+  {
+    title: "Foundry - AI Startup Advisor",
+    description: "Developed a RAG-based AI startup advisor that provides context-aware insights using real-world startup case studies.",
+    image: "/Foundry.png",
+    techStack: ["LangChain", "FastAPI", "React", "RAG", "ChromaDB", "Firebase", "Gemini/Groq API"],
+    github: "https://github.com/Ackjosh/Foundry",
+  },
   {
     title: "Real-time Fuel Availability System",
     description: "Architected a real-time fuel tracking system (app and website) with live station data and maps using Firebase, Firestore, and OpenStreetMap APIs.",
@@ -49,10 +56,14 @@ const techIcons: Record<string, React.ReactNode> = {
   "Chart.js": <SiJavascript className="text-yellow-400 w-5 h-5" />,
   Firebase: <SiFirebase className="text-yellow-400 w-5 h-5" />,
   Dart: <SiDart className="text-blue-400 w-5 h-5" />,
-  "TMDB API": <SiPostman className="text-cyan-400 w-5 h-5" />,
+  "TMDB API": <SiThemoviedatabase className="text-cyan-400 w-5 h-5" />,
   "Lenis": <FiMove className="text-yellow-400 w-5 h-5" />,
   "GSAP": <MdAnimation className="text-purple-400 w-5 h-5" />,
   CSS: <SiCss3 className="text-blue-400 w-5 h-5" />,
+  "Gemini/Groq API": <SiGooglegemini className="text-white w-5 h-5" />,
+  "FastAPI": <SiFastapi className="text-blue-400 w-5 h-5" />,
+  "RAG": <FiLayers className="text-green-400 w-5 h-5" />,
+  "ChromaDB": <MdOutlineStorage className="text-blue-400 w-5 h-5" />,
 };
 
 const Projects = () => {
