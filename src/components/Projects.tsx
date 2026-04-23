@@ -1,6 +1,6 @@
 import './Projects.css'
 import { SiReact, SiTailwindcss, SiTypescript, SiNodedotjs, SiMongodb, SiPython, SiJavascript, SiFirebase, SiDart, SiCss3, SiFastapi, SiGooglegemini, SiThemoviedatabase } from 'react-icons/si'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaLock } from 'react-icons/fa'
 import { FiMove, FiLayers } from 'react-icons/fi'
 import { MdAnimation, MdOutlineStorage } from 'react-icons/md';
 import FadeInWhenVisible from './FadeInWhenVisible';
@@ -10,7 +10,7 @@ const projectsData = [
     title: "Foundry - AI Startup Advisor",
     description: "Developed a RAG-based AI startup advisor that provides context-aware insights using real-world startup case studies.",
     image: "/Foundry.png",
-    techStack: ["LangChain", "FastAPI", "React", "RAG", "ChromaDB", "Firebase", "Gemini/Groq API"],
+    techStack: ["LangChain", "FastAPI", "React", "RAG", "ChromaDB", "Clerk", "Gemini/Groq API"],
     github: "https://github.com/Ackjosh/Foundry",
   },
   {
@@ -64,6 +64,7 @@ const techIcons: Record<string, React.ReactNode> = {
   "FastAPI": <SiFastapi className="text-blue-400 w-5 h-5" />,
   "RAG": <FiLayers className="text-green-400 w-5 h-5" />,
   "ChromaDB": <MdOutlineStorage className="text-blue-400 w-5 h-5" />,
+  "Clerk": <FaLock className="text-white w-5 h-5" />
 };
 
 const Projects = () => {

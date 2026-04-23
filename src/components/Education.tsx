@@ -22,7 +22,7 @@ const educationData: EducationItem[] = [
 
 const Education = () => {
   return (
-    <div className="w-full max-w-8xl flex flex-col gap-12 mt-12">
+    <div className="w-full max-w-5xl mx-auto px-6 md:px-10 lg:px-14 flex flex-col gap-12 mt-12">
       <h2 className="text-2xl font-semibold text-white text-left mb-6">Education</h2>
       <div className="flex flex-col gap-12">
         {educationData.map((edu, idx) => (

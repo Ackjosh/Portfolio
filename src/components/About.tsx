@@ -9,6 +9,7 @@ import {
   SiGithub
 } from 'react-icons/si';
 import Education from './Education';
+import WorkExperience from './WorkExperience';
 import FadeInWhenVisible from './FadeInWhenVisible';
 
 const techLogos = [
@@ -54,7 +55,7 @@ export default function About() {
                   <div className="text-xs text-gray-400">DSA Problems</div>
                 </div>
                 <div className="bg-white/5 p-3 rounded text-center">
-                  <div className="text-xl text-white font-bold">2★</div>
+                  <div className="text-xl text-white font-bold">3★</div>
                   <div className="text-xs text-gray-400">CodeChef</div>
                 </div>
               </div>
@@ -93,18 +94,18 @@ export default function About() {
               </div>
             </aside>
 
-              <main className="md:col-span-3 relative top-2 left-5 gap-10 flex flex-col">
+              <main className="md:col-span-3 relative top-1 left-5 gap-10 flex flex-col">
                 <div className="bg-zinc-800/50 rounded-2xl p-7 gap-10 flex flex-col">
                   <p className="text-gray-400 leading-relaxed text-lg">
-                    Hi, I'm Akshat! I'm a <strong className="text-white">Web Developer</strong> passionate about building intuitive and high-performance digital experiences with a solid foundation in <strong className="text-white">Data Structures and Algorithms</strong> with over 600 problems solved across platforms. I have worked with various technologies including <strong className="text-white">React, Node.js, MongoDB, TypeScript, MySQL</strong>. Exploring about <strong className="text-white">GenAI & Agentic AI</strong> architectures to build autonomous systems. Hands-on experience integrating <strong className='text-white'>RAG</strong> pipelines leveraging <strong className='text-white'>Vector databases</strong> to build smarter and more context-aware experiences. I also have a 2 star rating on CodeChef (max 1589). 
+                    Hi, I'm Akshat! I'm a <strong className="text-white">Web Developer</strong> passionate about building intuitive and high-performance digital experiences with a solid foundation in <strong className="text-white">Data Structures and Algorithms</strong> with over 600 problems solved across platforms. I have worked with various technologies including <strong className="text-white">React, Node.js, MongoDB, TypeScript, MySQL</strong>. Exploring <strong className="text-white">GenAI & Agentic AI</strong> architectures to build autonomous systems. Hands-on experience integrating <strong className='text-white'>RAG</strong> pipelines leveraging <strong className='text-white'>Vector databases</strong> to build smarter and more context-aware experiences. I also have a 3 star rating on CodeChef (max 1621). 
                   </p>
 
                   <div className="flex flex-col gap-2">
-                    <h2 className="text-white text-2xl font-semibold">Experience :-</h2>
+                    <h2 className="text-white text-2xl font-semibold">Experience</h2>
                     <ul className="pl-3 exp">
                       <li>- Worked with React, Node.js, Express, and MongoDB for full stack web apps.</li>
-                      <li>- Developed APIs and user authentication using TypeScript and JWT</li>
-                      <li>- Managed data and schemas with SQL (MySQL) and NoSQL databases.</li>
+                      <li>- Developed APIs and user authentication using TypeScript and JWT.</li>
+                      <li>- Worked on agentic AI systems, contributing to autonomous workflows.</li>
                     </ul>
                   </div>
                 </div>
@@ -134,7 +135,10 @@ export default function About() {
 
       <FadeInWhenVisible delay={0.4}>
         <div className="edu">
-          <Education />
+          <WorkExperience />
+          <div className="mt-4">
+            <Education />
+          </div>
         </div>
       </FadeInWhenVisible>
     </div>
