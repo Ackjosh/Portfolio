@@ -9,7 +9,7 @@ const projectsData = [
   {
     title: "Foundry - AI Startup Advisor",
     description: "Developed a RAG-based AI startup advisor that provides context-aware insights using real-world startup case studies.",
-    image: "/Foundry.png",
+    image: "/Foundry1.png",
     techStack: ["LangChain", "FastAPI", "React", "RAG", "ChromaDB", "Clerk", "Gemini/Groq API"],
     github: "https://github.com/Ackjosh/Foundry",
   },
